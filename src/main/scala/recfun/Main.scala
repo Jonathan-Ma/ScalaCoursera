@@ -17,9 +17,11 @@ object Main {
       if (col == 0 || col == row) 1 else pascal(col, row - 1) + pascal(col - 1, row - 1)
   
   /**
-   * Exercise 2
+   * Exercise 2 made some change
+   *
+   *
    */
-    def balance(chars: List[Char]): Boolean = ???
+  def balance(chars: List[Char]): Boolean = ???
   
   /**
    * Exercise 3
