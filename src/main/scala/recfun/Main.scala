@@ -21,8 +21,14 @@ object Main {
    *
    *
    */
-  def balance(chars: List[Char]): Boolean = ???
-  
+  def balance(chars: List[Char]): Boolean = chars.foldLeft(0){
+    case (0, ')') => return false
+    case (x, ')') => x - 1
+    case (x, '(') => x + 1
+    case (x, _  ) => x
+  } == 0
+
+
   /**
    * Exercise 3
    */
